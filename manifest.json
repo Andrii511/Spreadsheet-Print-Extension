@@ -1,0 +1,26 @@
+{
+  "name": "Row2Png",
+  "version": "1.0",
+  "description": "Save spreadsheet row info in file.",
+  "manifest_version": 3,
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Save spreadsheet row info in file."
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "oauth2": {
+    "client_id": "632566259766-c718q1j5g1a18tc2btablnh0tqm1j7qg.apps.googleusercontent.com",
+    "scopes": [
+        "https://www.googleapis.com/auth/spreadsheets",          
+        "https://www.googleapis.com/auth/spreadsheets.readonly"
+    ]
+  },
+  "permissions": [
+    "identity", "tabs", "storage", "scripting"
+  ],
+  "key":"pbdkjickfnfiogjokmhkpdmnaeikpgfe"
+}
